@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Rodriguez - Artist Portfolio</title>
+    <meta name="description" content="Contemporary artist exploring light, shadow, and emotion through oil and watercolor paintings.">
+    <meta name="keywords" content="artist, painting, oil painting, watercolor, contemporary art, portfolio">
+    <meta name="author" content="Elena Rodriguez">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Elena Rodriguez - Artist Portfolio">
+    <meta property="og:description" content="Contemporary artist exploring light, shadow, and emotion through oil and watercolor paintings.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navigation" class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="nav-logo-link">RUGAMBA Yves</a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Profile Picture -->
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <img src="yves/WhatsApp Image 2025-10-04 at 12.52.10_1b4317e5.jpg" alt="RUGAMBA Yves - Artist Profile" class="profile-img">
+                        <div class="profile-decoration">🎨</div>
+                    </div>
+                </div>
+                
+                <!-- Artist Info -->
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Yves
+                        <span class="hero-title-accent">RUGAMBA</span>
+                    </h1>
+                    <p class="hero-tagline">"Exploring Light and Shadow"</p>
+                    <p class="hero-description">
+                        Contemporary artist capturing the essence of human emotion through 
+                        the interplay of light, shadow, and color in oil and watercolor paintings.
+                    </p>
+                    <button class="cta-button" onclick="scrollToSection('gallery')">
+                        View My Work
+                        <svg class="cta-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="gallery-container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-description">
+                    A curated collection of my recent works, exploring themes of light, emotion, and human connection.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="oil">Oil</button>
+                <button class="filter-btn" data-filter="watercolor">Watercolor</button>
+                <button class="filter-btn" data-filter="abstract">Abstract</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Paintings will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="section-header">
+                <h2 class="section-title">About the Artist</h2>
+                <p class="section-description">
+                    Discover the story behind the art and the inspiration that drives each brushstroke.
+                </p>
+            </div>
+
+            <div class="about-content">
+                <!-- Text Content -->
+                <div class="about-text">
+                    <div class="about-bio">
+                        <p class="bio-paragraph">
+                            Yves RUGAMBA is a contemporary artist whose work explores the profound 
+                            relationship between light, shadow, and human emotion. Born and 
+                            now based in Kigali, his artistic journey began with a fascination for 
+                            the way light transforms ordinary moments into extraordinary experiences.
+                        </p>
+                        
+                        <p class="bio-paragraph">
+                            His paintings, whether in oil or watercolor, capture the delicate balance 
+                            between the seen and the felt. Each piece is a meditation on the human 
+                            condition, rendered through a masterful understanding of color theory and 
+                            composition. Yves's work has been described as "emotionally resonant" and 
+                            "visually arresting" by critics and collectors alike.
+                        </p>
+                        
+                        <p class="bio-paragraph">
+                            When not in his studio overlooking the Mediterranean, Yves can be found 
+                            wandering the streets of Kigali, camera in hand, seeking those fleeting 
+                            moments of beauty that inspire his next creation. His work has been exhibited 
+                            in galleries across Europe and is held in private collections worldwide.
+                        </p>
+                    </div>
+
+                    <!-- Artist Statement -->
+                    <div class="artist-statement">
+                        <h3 class="statement-title">Artist Statement</h3>
+                        <p class="statement-text">
+                            "I believe that art has the power to connect us to our deepest emotions and 
+                            to each other. Through my work, I strive to capture not just what I see, 
+                            but what I feel in those quiet moments of observation. Each painting is a 
+                            conversation between light and shadow, between the artist and the viewer, 
+                            between the past and the present."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Map Container -->
+                <!-- Note: For enhanced functionality, consider getting a Google Maps API key -->
+                <div class="about-map">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.5!2d30.1365491!3d-1.9596623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwNTcnMzQuOCJTIDMwwrAwOCcxMS42IkU!5e0!3m2!1sen!2srw!4v1704067200000!5m2!1sen!2srw"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="map-iframe"
+                            title="Studio Location Map">
+                        </iframe>
+                        
+                        <!-- Map Overlay -->
+                        <div class="map-overlay"></div>
+                        
+                        <!-- Location Info -->
+                        <div class="map-info">
+                            <h4 class="map-title">Studio Location</h4>
+                            <p class="map-location">Kigali, Rwanda</p>
+                            <p class="map-hours">Open by appointment</p>
+                            <a href="https://www.google.com/maps/@-1.9596623,30.1365491,16z?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="map-link">
+                                View on Google Maps
+                                <svg class="map-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Decorative Elements -->
+                    <div class="map-decoration map-decoration-1">📍</div>
+                    <div class="map-decoration map-decoration-2">🎨</div>
+                </div>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="about-info">
+                <div class="info-card">
+                    <div class="info-icon">🌍</div>
+                    <h3 class="info-title">Exhibitions</h3>
+                    <p class="info-text">
+                        Solo shows in Kigali, Rwanda<br>
+                        Group exhibitions across Rwanda
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h3 class="contact-title">Get In Touch</h3>
+                    <p class="contact-description">
+                        Interested in commissioning a piece or have questions about my work? 
+                        I'd love to hear from you.
+                    </p>
+                    
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit" id="form-submit">
+                            Send Message
+                        </button>
+                        
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Social -->
+                <div class="contact-info-section">
+                    <h3 class="contact-title">Connect With Me</h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <p class="contact-label">Email</p>
+                                <a href="mailto:yvesrugamba4@gmail.com" class="contact-link">
+                                    yvesrugamba4@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <p class="contact-label">Location</p>
+                                <p class="contact-value">Kigali, Rwanda</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="social-section">
+                        <h4 class="social-title">Follow My Journey</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.297-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.807.875 1.297 2.026 1.297 3.323s-.49 2.448-1.297 3.323c-.875.807-2.026 1.297-3.323 1.297z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Artsy">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:yvesrugamba4@gmail.com" class="social-link" aria-label="Email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div class="newsletter-section">
+                        <h4 class="newsletter-title">Stay Updated</h4>
+                        <p class="newsletter-description">
+                            Get notified about new paintings and upcoming exhibitions.
+                        </p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" class="newsletter-input">
+                            <button class="newsletter-button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Yves RUGAMBA. All rights reserved.
+                </p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-overlay" onclick="closeLightbox()"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            
+            <button class="lightbox-nav lightbox-prev" onclick="prevPainting()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+            </button>
+            
+            <button class="lightbox-nav lightbox-next" onclick="nextPainting()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </button>
+            
+            <div class="lightbox-image-container">
+                <img id="lightbox-image" src="" alt="" class="lightbox-image">
+            </div>
+            
+            <div class="lightbox-info">
+                <h2 id="lightbox-title" class="lightbox-title"></h2>
+                <div class="lightbox-details">
+                    <p class="lightbox-detail">
+                        <span class="lightbox-detail-label">Year:</span>
+                        <span id="lightbox-year"></span>
+                    </p>
+                    <p class="lightbox-detail">
+                        <span class="lightbox-detail-label">Medium:</span>
+                        <span id="lightbox-medium"></span>
+                    </p>
+                    <p class="lightbox-detail">
+                        <span class="lightbox-detail-label">Category:</span>
+                        <span id="lightbox-category"></span>
+                    </p>
+                </div>
+                <p id="lightbox-description" class="lightbox-description"></p>
+                <div class="lightbox-hints">
+                    <p>Use arrow keys or click the arrows to navigate</p>
+                    <p>Press ESC or click outside to close</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
